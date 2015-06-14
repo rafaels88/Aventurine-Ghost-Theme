@@ -1,7 +1,7 @@
 {{! This is the post loop - each post will be output using this markup }}
 
 <div class="row uniform">
-<header class="12u$ section-header"><h1>Latest Posts</h1></header>
+<!--<header class="12u$ section-header"><h1>Últimos artigos</h1></header>-->
 {{#foreach posts}}
     <div class="row uniform">
         {{#if image}}
@@ -13,12 +13,12 @@
             <div class="post-container">
                 <header class="post-header">
                     <h3 class="post-title {{#if featured}}post-featured{{/if}}"><a href="{{url}}">{{title}}</a></h3>
-                    <p class="post-meta">by {{author}} on <time class="blog-date" datetime="{{date format='MMMM DD, YYYY'}}">{{date format="MMMM DD, YYYY"}}</time></p>
+                    <p class="post-meta">por {{author}} em <time class="blog-date" datetime="{{date format='MMMM DD, YYYY'}}">{{date format="DD/MM/YYYY"}}</time></p>
                 </header>
-                <article class="post-content">
-                    <p>{{excerpt characters="300"}}...</p>
+                <article class="post-content preview">
+                    <p>{{excerpt characters="260"}}...</p>
                 </article>
-                <a href="{{url}}" class="read-more">Read More »</a>
+                <a href="{{url}}" class="read-more">Leia Mais »</a>
             </div>
         </section>
         {{#if image}}

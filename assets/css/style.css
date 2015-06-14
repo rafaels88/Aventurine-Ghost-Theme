@@ -667,7 +667,8 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
     -ms-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
     color: #444;
-    font-family: 'Megrim', Arial, Helvetica, sans-serif;
+    /*font-family: 'Megrim', Arial, Helvetica, sans-serif;*/
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
     position: absolute;
     height: inherit;
     line-height: inherit;
@@ -791,7 +792,8 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
 /* Footer */
 /* line 913, /Users/alex/Documents/ghost-v0.5.9/content/themes/aventurine/assets/sass/style.scss */
 #footer {
-  background: #8CD9D3;
+  /*background: #8CD9D3;*/
+  background: #6BD;
   padding: 2em 0;
   margin-top: 4em;
   color: #fff;
@@ -872,6 +874,15 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
 .post-image {
   height: 15em; }
 
+.post-content {
+  font-family: "Georgia";
+  font-size: 1.20rem;
+}
+.post-content.preview {
+  font-family: "Georgia";
+  font-size: 1rem;
+}
+
 /* line 1009, /Users/alex/Documents/ghost-v0.5.9/content/themes/aventurine/assets/sass/style.scss */
 .post-content img {
   max-width: 100%; }
@@ -892,6 +903,13 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
 /* line 1034, /Users/alex/Documents/ghost-v0.5.9/content/themes/aventurine/assets/sass/style.scss */
 .post-header .feature-image {
   margin-bottom: 1.5em; }
+
+.post-header .post-title a {
+  color: #69D;
+}
+.post-header .post-title a:hover {
+  color: #7AE;
+}
 
 /* Author */
 /* line 1042, /Users/alex/Documents/ghost-v0.5.9/content/themes/aventurine/assets/sass/style.scss */

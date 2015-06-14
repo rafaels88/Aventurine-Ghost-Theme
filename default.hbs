@@ -30,6 +30,7 @@
 
     <!-- Main JS Initialization -->
     <script src="{{asset "js/init.js"}}"></script>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Megrim:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300,700' rel='stylesheet' type='text/css'>
 
@@ -44,6 +45,24 @@
 </head>
 <body id="top" class="{{body_class}}">
 
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '482825848543934',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     {{>header/header-default}}
 
     {{! Everything else gets inserted here }}
@@ -51,11 +70,8 @@
 
     <!-- Footer -->
 			<footer id="footer">
-                <div class="rss"><a href="{{blog.url}}/rss/" class="icon fa-rss"></a></div>
-				<div class="copyright">
-                    Made by <a href="https://crystalline-themes.com">Crystalline Themes</a> with much love and passion.<br/>
-					&copy; 2015 <a href="https://crystalline-themes.com">Crystalline Themes</a>. All rights reserved.
-				</div>
+        <div class="rss"><a href="{{blog.url}}/rss/" class="icon fa-rss"></a></div>
+        <div>2015 Copyright &copy; Todos os direitos são reservados.</div>
 			</footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
